@@ -1,0 +1,5 @@
+Add following:
+scikit learn
+matplotlib 
+
+https://github.com/Shristy-Gupta/MNIST-ML-OPS.git 
