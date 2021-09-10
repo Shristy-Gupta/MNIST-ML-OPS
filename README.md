@@ -1,6 +1,16 @@
 # MNIST-ML-OPS
 Repository for ML OPS
-### Sept 2 Homework
+### Homework 1
+Training dataset plot
+![image](https://user-images.githubusercontent.com/26459890/132888977-6e6da7d9-686c-4334-878d-96a54ad73285.png)
+![image](https://user-images.githubusercontent.com/26459890/132889010-5889f3c2-46d4-43e0-b752-11a88cdb3296.png)
+
+Corresponding confusion matrix:
+
+![image](https://user-images.githubusercontent.com/26459890/132889094-ced0820e-bb3b-41dc-a2c8-29eed17bf16e.png)
+
+
+### Sept 2 Homework 2
 <!--- add code that checks how metric(s) vary with the hyperparameter. Report your observations (graph or table form) along with some text as your explanation/conclusions to the README.md file -->
 Results in tabular form:
 For various Hyper parameters the  f1score   and   accuracy score are:
