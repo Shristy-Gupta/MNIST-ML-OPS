@@ -9,7 +9,7 @@ Corresponding confusion matrix:
 
 ![image](https://user-images.githubusercontent.com/26459890/132889094-ced0820e-bb3b-41dc-a2c8-29eed17bf16e.png)
 Please check the code in MNIST Folder: https://github.com/Shristy-Gupta/MNIST-ML-OPS/blob/feature/plot/MNIST/plot_digits_classification.py 
-and the requirements in MNIST Folder:
+and the requirements in MNIST Folder: https://github.com/Shristy-Gupta/MNIST-ML-OPS/blob/feature/plot/MNIST/requirements.txt
 
 ### Sept 2 Homework 2
 <!--- add code that checks how metric(s) vary with the hyperparameter. Report your observations (graph or table form) along with some text as your explanation/conclusions to the README.md file -->
