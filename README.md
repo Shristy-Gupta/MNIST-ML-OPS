@@ -16,7 +16,7 @@ and the requirements in MNIST Folder: https://github.com/Shristy-Gupta/MNIST-ML-
 Results in tabular form:
 
 For various Hyper parameters the  f1score   and   accuracy score are:
-#### Result/Observation: with the increase of hyperparameter: the f1score and the accuracy score increase.
+#### Result/Observation: with the increase of hyperparameter: the f1score and the accuracy score decrease.
 Please check the hyperparameter code in MNIST folder :https://github.com/Shristy-Gupta/MNIST-ML-OPS/blob/feature/plot/MNIST/plot_hyperparameter.py 
 
 ![image](https://user-images.githubusercontent.com/26459890/132521632-779ffe0c-9787-448e-94c1-c3bb6f5fdacd.png)
