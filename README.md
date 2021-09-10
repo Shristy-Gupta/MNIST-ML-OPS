@@ -14,8 +14,9 @@ and the requirements in MNIST Folder: https://github.com/Shristy-Gupta/MNIST-ML-
 ### Sept 2 Homework 2
 <!--- add code that checks how metric(s) vary with the hyperparameter. Report your observations (graph or table form) along with some text as your explanation/conclusions to the README.md file -->
 Results in tabular form:
+
 For various Hyper parameters the  f1score   and   accuracy score are:
-Result/Observation: with the increase of hyperparameter: the f1score and the accuracy score increase.
+#### Result/Observation: with the increase of hyperparameter: the f1score and the accuracy score increase.
 Please check the hyperparameter code in MNIST folder :https://github.com/Shristy-Gupta/MNIST-ML-OPS/blob/feature/plot/MNIST/plot_hyperparameter.py 
 
 ![image](https://user-images.githubusercontent.com/26459890/132521632-779ffe0c-9787-448e-94c1-c3bb6f5fdacd.png)
