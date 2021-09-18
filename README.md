@@ -31,3 +31,4 @@ please check the code in Homework 4 folder https://github.com/Shristy-Gupta/MNIS
 ![image](https://user-images.githubusercontent.com/26459890/133908449-79a03a52-0eb1-49f3-becd-7aa8174b8d38.png)
 
 please check the code in Homework 5
+https://github.com/Shristy-Gupta/MNIST-ML-OPS/tree/feature/plot/Assignment5 
