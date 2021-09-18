@@ -4,7 +4,7 @@
 
 # Standard scientific Python imports
 import matplotlib.pyplot as plt
-
+from utils import train_for_gamma_vals,calculate_f1score_and_accuracy
 # Import datasets, classifiers and performance metrics
 from sklearn import datasets, svm, metrics
 from sklearn.model_selection import train_test_split
@@ -13,6 +13,7 @@ from sklearn.metrics import  accuracy_score
 from joblib import dump,load
 import os
 import argparse
+
 
 ###############################################################################
 # Digits dataset
@@ -60,15 +61,15 @@ gamma=[0.001,0.002,0.003,0.01]
 # Split data into 50% train and 50% test subsets
 X_train, X_test, y_train, y_test = train_test_split(data, digits.target, test_size=0.3, shuffle=False)
 X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.5, shuffle=False)
-def train_for_gamma_vals(gamma_vals,x_train,y_train):
-    clf=svm.SVC(gamma=gamma_vals)
-    clf.fit(x_train, y_train)
-    return clf
-def calculate_f1score_and_accuracy(clf,x1_val,y1_val):
-    predicted = clf.predict(x1_val)
-    f1score=f1_score(y1_val,predicted,average='micro')
-    accuracyscore=accuracy_score(y1_val,predicted)
-    return f1score,accuracyscore
+# def train_for_gamma_vals(gamma_vals,x_train,y_train):
+#     clf=svm.SVC(gamma=gamma_vals)
+#     clf.fit(x_train, y_train)
+#     return clf
+# def calculate_f1score_and_accuracy(clf,x1_val,y1_val):
+#     predicted = clf.predict(x1_val)
+#     f1score=f1_score(y1_val,predicted,average='micro')
+#     accuracyscore=accuracy_score(y1_val,predicted)
+#     return f1score,accuracyscore
 finalans=0
 finalgamma = 0
 finalModel=None
