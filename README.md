@@ -20,3 +20,7 @@ For various Hyper parameters the  f1score   and   accuracy score are:
 Please check the hyperparameter code in MNIST folder :https://github.com/Shristy-Gupta/MNIST-ML-OPS/blob/feature/plot/MNIST/plot_hyperparameter.py 
 
 ![image](https://user-images.githubusercontent.com/26459890/132521632-779ffe0c-9787-448e-94c1-c3bb6f5fdacd.png)
+
+
+
+### 10/9/2021 Sept 10 Homework 4
