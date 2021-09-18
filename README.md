@@ -23,4 +23,4 @@ Please check the hyperparameter code in MNIST folder :https://github.com/Shristy
 
 
 
-### 10/9/2021 Sept 10 Homework 4
+### 10/9/2021 Sept 10 Homework 3 Assignment 4
