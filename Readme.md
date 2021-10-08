@@ -1,5 +1,6 @@
 
 ### Assignment 5
+Test functions are added: https://github.com/Shristy-Gupta/MNIST-ML-OPS/blob/feature/quiz2/tests/test_utils.py 
 ![image](https://user-images.githubusercontent.com/26459890/136525741-51407ff7-f1f1-476d-b3b7-071e200f39ae.png)
 These are the results of two questions 
 1. if you give n=100 samples, and provide train:test:valid split as 70:20:10, there should be 70,20, and 10 samples in the train, tests, and validation splits returned by `create_split` function.
