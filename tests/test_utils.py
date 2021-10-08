@@ -68,3 +68,16 @@ def test_split():
     assert X_test.shape[0] == 20
     assert x_valid.shape[0] == 10
     assert X_train.shape[0] + X_test.shape[0] + x_valid.shape[0] == 100
+
+def test_split2():
+    # flatten the images
+    n_samples = len(digits.images)
+    data = digits.images.reshape((n_samples, -1))
+    gamma_vals=0.001
+    # Split data into 70% train and 30% test subsets
+    X_train, X_test, y_train, y_test = train_test_split(data[:9], digits.target[:9], test_size=0.3, shuffle=False)
+    x_valid, X_test, y_valid, y_test = train_test_split(X_test, y_test, test_size=0.66, shuffle=False)
+    assert X_train.shape[0] == 6
+    assert X_test.shape[0] == 2
+    assert x_valid.shape[0] == 1
+    assert X_train.shape[0] + X_test.shape[0] + x_valid.shape[0] == 9
