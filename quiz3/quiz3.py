@@ -102,7 +102,7 @@ def test_digit_correct_9():
     assert pred[0] == 9
 
 
-def test_digit_correct_0dt():
+def test_digit_correct_0_dt():
     data, target = decisioncommon()
     target = np.where(target == 0)
     k = target[0]
@@ -111,7 +111,7 @@ def test_digit_correct_0dt():
     assert pred[0] == 0
 
 
-def test_digit_correct_1dt():
+def test_digit_correct_1_dt():
     data, target = decisioncommon()
     target = np.where(target == 1)
     k = target[0]
@@ -120,7 +120,7 @@ def test_digit_correct_1dt():
     assert pred[0] == 1
 
 
-def test_digit_correct_2dt():
+def test_digit_correct_2_dt():
     data, target = decisioncommon()
     target = np.where(target == 2)
     k = target[0]
@@ -129,7 +129,7 @@ def test_digit_correct_2dt():
     assert pred[0] == 2
 
 
-def test_digit_correct_3dt():
+def test_digit_correct_3_dt():
     data, target = decisioncommon()
     target = np.where(target == 3)
     k = target[0]
@@ -138,7 +138,7 @@ def test_digit_correct_3dt():
     assert pred[0] == 3
 
 
-def test_digit_correct_4dt():
+def test_digit_correct_4_dt():
     data, target = decisioncommon()
     target = np.where(target == 4)
     k = target[0]
@@ -147,7 +147,7 @@ def test_digit_correct_4dt():
     assert pred[0] == 4
 
 
-def test_digit_correct_5dt():
+def test_digit_correct_5_dt():
     data, target = decisioncommon()
     target = np.where(target == 5)
     k = target[0]
@@ -156,7 +156,7 @@ def test_digit_correct_5dt():
     assert pred[1] == 5
 
 
-def test_digit_correct_6dt():
+def test_digit_correct_6_dt():
     data, target = decisioncommon()
     target = np.where(target == 6)
     k = target[0]
@@ -165,7 +165,7 @@ def test_digit_correct_6dt():
     assert pred[0] == 6
 
 
-def test_digit_correct_7dt():
+def test_digit_correct_7_dt():
     data, target = decisioncommon()
     target = np.where(target == 7)
     k = target[0]
@@ -174,7 +174,7 @@ def test_digit_correct_7dt():
     assert pred[0] == 7
 
 
-def test_digit_correct_8dt():
+def test_digit_correct_8_dt():
     data, target = decisioncommon()
     target = np.where(target == 8)
     k = target[0]
@@ -183,7 +183,7 @@ def test_digit_correct_8dt():
     assert pred[0] == 8
 
 
-def test_digit_correct_9dt():
+def test_digit_correct_9_dt():
     data, target = decisioncommon()
     target = np.where(target == 9)
     k = target[0]
