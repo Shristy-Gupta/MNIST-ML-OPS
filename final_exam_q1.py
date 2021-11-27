@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 #from skimage.transform import rescale, resize, downscale_local_mean
 import pandas as pd
 
-###############################################################################
+#############################################################################
 # Digits dataset
 # --------------
 #
