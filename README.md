@@ -82,9 +82,9 @@ docker run -it -p 5000:5000 m20cs015
 #### Steps to run the file
 1) First we need to run Docker Compose
 ``` sh
-docker-compose up
+docker-compose up. This file has **ports where the apis will be hosted and will provide some disk space to the program if needed**
 ```
-2) Now when docker compose is up and running we need to move to CLI command and run the bash file
+2) Now when docker compose is up and running we need to move to CLI command and run the bash file. This file has **Curl Commands**
 ``` sh
 Docker exec -it mlops /bin/bash
 bash docker_example.sh
