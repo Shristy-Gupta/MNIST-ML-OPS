@@ -9,6 +9,7 @@
 
 ### Remarks
 We can observe that the **Model Accuracy is increasing** **with the increase of training data**. And finally it saturates.
+The best hyperparamter **gamma value is 0.001**
 # Part 2 : Comparing actual Predictions based on Confusion matrix
 ![image](https://user-images.githubusercontent.com/26459890/143779451-f3d47f3c-a971-4f21-a71c-d8535c1c01a0.png)
 
