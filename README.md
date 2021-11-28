@@ -4,7 +4,7 @@
 ### Submitted To: Dr. Tejas Indulal Dhamecha
 
 
-### PART 1 API Creation in FLASK and POSTMAN for seeing results
+# PART 1 API Creation in FLASK and POSTMAN for seeing results
 1) Two APIs created svm_predict and decision_tree_predict with method type POST
 2) Functionality: The apis take json Body which contains the attribute Image and outputs the predicted Number
 
@@ -38,7 +38,7 @@ use post command with urls http://localhost:5000/decision_tree_predict and http:
 ![image](https://user-images.githubusercontent.com/26459890/143764007-6e415c3e-7976-44f7-8745-de70beba14e4.png)
 
 
-### Part 2 Dockerising the deployment
+# Part 2 Dockerising the deployment
 1) Installed the docker for windows from docker toolbox, since the virtualbox and docker has conflicting configurations (Hyper-V conflict) from https://docs.docker.com/desktop/windows/install/ 
 2) 2) Created account docker hub with username shristy26 and a new repository shristy26/m20cs015server
 ``` sh
