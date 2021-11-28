@@ -61,14 +61,13 @@ docker image push shristy26/m20cs015server:ver1
 ```
 After successful execution I could see the tag in docker hub as follows with Digest as sha256:a4c5a1a49d3b696898ecd75263de99fb1afefd7509a147b1ad33de7d4957280e
 ![image](https://user-images.githubusercontent.com/26459890/131549740-d9318bf8-2980-43f8-adf6-24d0c7aab6a7.png)
-5) After creating the webapp pulled the image from docker hub. Then created the work directory to run the server on local host. Then in order to host files into the container made the dockerFolder directory and copied into the working dorectory. The same code can be found in m20cs015webapp\sudoku\dockerfile
+5) After I pulled the container with python and flask images installed
 
 ``` sh
-FROM shristy26/m20cs015server:ver1
-WORKDIR /var/www/html
-RUN mkdir dockerFolder
-WORKDIR /var/www/html/dockrFolder
-COPY . /var/www/html/dockerFolder/
+FROM python:3.8.8
+ADD . /prediction
+WORKDIR /prediction
+RUN pip install -r requirements.txt
 ``` 
 6) To build docker image of the webapp :
 ``` sh
@@ -76,10 +75,21 @@ docker build .  -t m20cs015
 ```
 7) To run this image in specific port used following command
 ``` sh
-docker run -it -p 8000:80 m20cs015
+docker run -it -p 5000:5000 m20cs015
 ```
-8) Finally the app will run on url: http://localhost:8000/dockerFolder/
+8) Finally the app will run on url: http://localhost:5000/prediciton/
 
+#### Steps to run the file
+1) First we need to run Docker Compose
+``` sh
+docker-compose up
+```
+2) Now when docker compose is up and running we need to move to CLI command and run the bash file
+``` sh
+Docker exec -it mlops /bin/bash
+bash docker_example.sh
+```
+3) Now we can access the apis
 
 
 
