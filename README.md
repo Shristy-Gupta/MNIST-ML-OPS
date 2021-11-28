@@ -51,7 +51,34 @@ RUN apt-get clean
 EXPOSE 80
 CMD ["apache2ctl","-D","FOREGROUND"]
 ```
+3)![image](https://user-images.githubusercontent.com/26459890/131547012-d4eeb469-cf38-44ed-99db-779f67a2db90.png)
+3) Created a dockerfile in m20cs015server which creates ubuntu as base image. On top of the base image installed apache2 for creating a new docker image from scratch. The code for the same is available in m20cs015server folder in "Dockerfile" 
+4) In order to pull the image in sudokuwebapp (in order to deploy it) pushed the image to docker hub webserver 
+``` sh
+docker build . -t m20cs015server
+docker image build -t shristy26/m20cs015server:ver1 .
+docker image push shristy26/m20cs015server:ver1
+```
+After successful execution I could see the tag in docker hub as follows with Digest as sha256:a4c5a1a49d3b696898ecd75263de99fb1afefd7509a147b1ad33de7d4957280e
+![image](https://user-images.githubusercontent.com/26459890/131549740-d9318bf8-2980-43f8-adf6-24d0c7aab6a7.png)
+5) After creating the webapp pulled the image from docker hub. Then created the work directory to run the server on local host. Then in order to host files into the container made the dockerFolder directory and copied into the working dorectory. The same code can be found in m20cs015webapp\sudoku\dockerfile
 
+``` sh
+FROM shristy26/m20cs015server:ver1
+WORKDIR /var/www/html
+RUN mkdir dockerFolder
+WORKDIR /var/www/html/dockrFolder
+COPY . /var/www/html/dockerFolder/
+``` 
+6) To build docker image of the webapp :
+``` sh
+docker build .  -t m20cs015
+```
+7) To run this image in specific port used following command
+``` sh
+docker run -it -p 8000:80 m20cs015
+```
+8) Finally the app will run on url: http://localhost:8000/dockerFolder/
 
 
 
