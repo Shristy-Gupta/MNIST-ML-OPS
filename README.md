@@ -7,6 +7,7 @@
 ### API Creation in FLASK and POSTMAN for seeing results
 Two APIs created svm_predict and decision_tree_predict with method type POST
 Functionality: The apis take json Body which contains the attribute Image and outputs the predicted Number
+
 ![image](https://user-images.githubusercontent.com/26459890/143763613-7e75245d-9226-4277-adc8-4844e2e0e9ca.png)
 ![image](https://user-images.githubusercontent.com/26459890/143763621-96e0aad9-ab77-4305-b649-c6ba84b9ea42.png)
 
