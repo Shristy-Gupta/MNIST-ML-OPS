@@ -80,9 +80,9 @@ docker run -it -p 5000:5000 m20cs015
 8) Finally the app will run on url: http://localhost:5000/prediciton/
 
 #### Steps to run the file
-1) First we need to run Docker Compose
+1) First we need to run Docker Compose. This file has **ports where the apis will be hosted and will provide some disk space to the program if needed**
 ``` sh
-docker-compose up. This file has **ports where the apis will be hosted and will provide some disk space to the program if needed**
+docker-compose up. 
 ```
 2) Now when docker compose is up and running we need to move to CLI command and run the bash file. This file has **Curl Commands**
 ``` sh
